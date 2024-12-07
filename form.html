@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mera Bestie - Personalized Gifts</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Mera Bestie</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#gifts">Gifts</a></li>
+                <li><a href="#personalize">Personalize</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-text">
+            <h2>Celebrating Friendship & Love, One Gift at a Time</h2>
+            <p>Explore personalized gifts that make every occasion special.</p>
+            <a href="#gifts" class="cta-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Gift Selection Section -->
+    <section id="gifts">
+        <h2>Our Gifts</h2>
+        <div class="gift-categories">
+            <div class="gift-card" onclick="showDetails('birthday')">
+                <h3>Birthday</h3>
+                <img src="https://as1.ftcdn.net/v2/jpg/04/42/62/12/1000_F_442621279_PYhie13pVGcSSYTAm1eqlC3e7Lcy0oNV.jpg" alt="Birthday Gifts">
+            </div>
+            <div class="gift-card" onclick="showDetails('anniversary')">
+                <h3>Anniversary</h3>
+                <img src="https://ideas.hallmark.com/wp-content/uploads/2020/08/anniversary-card-WTW-MC.jpg" alt="Anniversary Gifts">
+            </div>
+            <div class="gift-card" onclick="showDetails('friendship')">
+                <h3>Friendship</h3>
+                <img src="https://watermark.lovepik.com/photo/50085/3715.jpg_wh1200.jpg" alt="Friendship Gifts">
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalization Section -->
+    <section id="personalize">
+        <h2>Personalize Your Gift</h2>
+        <div class="personalization-options">
+            <div>
+            <label for="message">Message Card:</label>
+            <input id="message" placeholder="Write a special message..."></input>
+        </div>
+        <div>
+            <label for="engraving">Engraving Text:</label>
+            <input type="text" id="engraving" placeholder="Add engraving text...">
+        </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout">
+        <h2>Proceed to Checkout</h2>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <!-- Floating Action Button -->
+    <div id="floating-btn" onclick="smoothScroll('checkout')">
+        <span>🛒</span>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Mera Bestie - All Rights Reserved</p>
+    </footer>
+
+    <!-- Modal for Product Details -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Product Details</h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

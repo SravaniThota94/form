@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color:rgb(214, 42, 94);; /* Warm Coral */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Hero Section */
+#hero {
+    background: url('https://www.shutterstock.com/shutterstock/photos/2104048760/display_1500/stock-vector-two-hearts-continuous-one-line-drawing-valentines-day-concept-hearts-couple-trendy-minimalist-2104048760.jpg') no-repeat center center; 
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(214, 42, 94);
+    text-align: center;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+#hero .hero-text {
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.3em;
+    margin-bottom: 100px;
+}
+
+.cta-btn {
+    background-color: rgb(245, 58, 114);
+    color:white;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Gift Selection Section */
+#gifts {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#gifts h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.gift-categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.gift-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 200px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.gift-card:hover {
+    transform: scale(1.05);
+}
+
+.gift-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.gift-card h3 {
+    margin-top: 10px;
+}
+
+/* Personalization Section */
+#personalize {
+    background-color: rgb(245, 29, 94);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#personalize h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#personalize textarea,
+#personalize input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#personalize label {
+    font-size: 1.1em;
+    color: white;
+}
+
+/* Checkout Section */
+#checkout {
+    background-color: #99a0a5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#checkout h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#checkout button {
+    background-color: white;
+    color: #FF6F61;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#checkout button:hover {
+    background-color: #FF4F3B;
+    color: white;
+}
+
+/* Floating Action Button */
+#floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF6F61;
+    color: white;
+   
+}
